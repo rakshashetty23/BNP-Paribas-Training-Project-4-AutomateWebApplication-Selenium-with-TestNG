@@ -17,7 +17,6 @@ public class AddToCartTest {
 	
 		System.setProperty("webdriver.gecko.driver","D:\\geckodriver\\geckodriver.exe" );  
         
-        // Initialize Gecko Driver using Desired Capabilities Class  
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();  
 		capabilities.setCapability("marionette",true);  
 		WebDriver driver= new FirefoxDriver(capabilities);  

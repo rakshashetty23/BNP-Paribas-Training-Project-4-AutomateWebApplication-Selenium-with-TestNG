@@ -14,14 +14,13 @@ public class LoginTest {
 	public void loginTest() {
 	
 		System.setProperty("webdriver.gecko.driver","D:\\geckodriver\\geckodriver.exe" );  
-        
-        // Initialize Gecko Driver using Desired Capabilities Class  
+         
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();  
 		capabilities.setCapability("marionette",true);  
 		WebDriver driver= new FirefoxDriver(capabilities);  
+		
 		driver.get("http://automationpractice.com/index.php");
 
-		
 		driver.findElement(By.className("login")).click();
 		driver.findElement(By.id("email")).sendKeys("rakshashetty680@gmail.com");
 		driver.findElement(By.id("passwd")).sendKeys("rakshashetty123");
